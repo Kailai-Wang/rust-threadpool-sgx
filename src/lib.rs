@@ -94,7 +94,7 @@ pub const NUM_CPU: usize = 1;
 use std::fmt;
 use std::sync::atomic::{AtomicUsize, Ordering};
 use std::sync::mpsc::{channel, Receiver, Sender};
-use std::sync::{Arc, SgxCondvar as Condvar, SgxMutex as Mutex};
+use std::sync::{Arc, Condvar, Mutex};
 use std::thread;
 
 pub trait FnBox {
